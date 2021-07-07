@@ -4,13 +4,22 @@
     <title>Art Gallery</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css" media="screen">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/app.js"></script>
+	
 </head>
 <body>
 <div id="header" class="container-fluid">
-    <nav class="navbar navbar-expand-md navbar-light sticky-top">
-        <a class="navbar-brand" href="#">Art Gallery</a>
+    <nav class="navbar navbar-expand-md navbar-light sticky-top" >
+        <!-- <a class="navbar-brand" href="#">Art Gallery</a> -->
+		<a class="navbar-brand" href="#">Prashant Art's</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -33,6 +42,10 @@
         </div>
     </nav>
 </div>
+<!-- <div class="container page-top"> -->
+			
+		<!-- </div> -->
+
 <section id="middle-content" class="container-fluid">
     <div class="row">
         <div class="col-lg-6">
@@ -46,36 +59,73 @@
                 quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div class="col-lg-6">
-            <img class="img-fluid" src="img/howTouse.jpeg">
+            <img class="img-fluid" src="img/howTouse.svg">
         </div>
     </div>
     <br>
     <h1 class="text-center" style="color:MediumSeaGreen;">Sketches</h1><br>
     <div class="row">
-        <div class="col-lg-3">
-            <img src="img/img6.jpg" alt="Snow" class="img-thumbnail zoom">
-        </div>
-        <div class="col-lg-3">
-            <img src="img/img2.jpg" alt="Forest" class="img-thumbnail zoom">
-        </div>
-        <div class="col-lg-3">
-            <img src="img/img3.jpg" alt="Mountains" class="img-thumbnail zoom">
-        </div>
-        <div class="col-lg-3">
-            <img src="img/img5.jpg" alt="Mountains" class="img-thumbnail zoom">
-        </div>
-    </div>
+
+				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<a href="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+						<img  src="https://images.pexels.com/photos/62307/air-bubbles-diving-underwater-blow-62307.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+					   
+					</a>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<a href="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"  class="fancybox" rel="ligthbox">
+						<img  src="https://images.pexels.com/photos/38238/maldives-ile-beach-sun-38238.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid"  alt="">
+					</a>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<a href="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+						<img  src="https://images.pexels.com/photos/158827/field-corn-air-frisch-158827.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+					</a>
+				</div>
+				
+				<div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<a href="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+						<img  src="https://images.pexels.com/photos/302804/pexels-photo-302804.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+					</a>
+				</div>
+				
+				 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<a href="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+						<img  src="https://images.pexels.com/photos/1038914/pexels-photo-1038914.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+					</a>
+				</div>
+				
+				 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<a href="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="fancybox" rel="ligthbox">
+						<img  src="https://images.pexels.com/photos/414645/pexels-photo-414645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" class="zoom img-fluid "  alt="">
+					</a>
+				</div>
+				
+				 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<a href="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+						<img  src="https://images.pexels.com/photos/56005/fiji-beach-sand-palm-trees-56005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+					</a>
+				</div>
+				
+				 <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+					<a href="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="fancybox" rel="ligthbox">
+						<img  src="https://images.pexels.com/photos/1038002/pexels-photo-1038002.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="zoom img-fluid "  alt="">
+					</a>
+				</div>
+		   </div>
 </section>
 
 <footer>
-    <div class="text-center">
-        <p style="font-size:50px;font-family:serif"> Let’s get social</p>
-        <p>ART Gallery</br>
-            copyright@2020</p>
+    <div class="text-center"><br>
+        <!-- <p style="font-size:50px;"> Let’s get social</p> -->
+        <!-- <p>ART Gallery</br> -->
+		<p>Prashant Art's 
+            copyright@2021</p>
     </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

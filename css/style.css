@@ -4,7 +4,7 @@ body, html {
 }
 
 #header {
-    background: url(../img/back.jpeg) no-repeat center center fixed;
+    background: url(../img/back.svg) no-repeat center center fixed;
     z-index: 50;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -20,22 +20,50 @@ body, html {
     padding: 20px 50px 20px 100px;
 }
 
-.zoom {
-    padding: 20px;
-    background-color: white;
-    transition: transform .2s; /* Animation */
-    margin: 0 auto;
+.thumb{
+	margin-bottom: 30px;
+}
+        
+.page-top{
+	margin-top:85px;
+}
+   
+img.zoom {
+    width: 100%;
+    height: 200px;
+    border-radius:5px;
+    object-fit:cover;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+}
+        
+.transition {
+    -webkit-transform: scale(1.2); 
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-.zoom:hover {
-    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+.modal-header {
+    border-bottom: none;
 }
+
+.modal-title {
+	color:#000;
+}
+
+.modal-footer{
+	display:none;  
+}
+
 
 /*----------------------------------------------|
 |                    footer                     |
 |-----------------------------------------------*/
 footer {
-    height: 200px;
+    height: 80px;
     color: #ffffff;
     background-color: #003366;
 }
