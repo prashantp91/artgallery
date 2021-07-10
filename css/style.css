@@ -1,6 +1,8 @@
 body, html {
-    height: 50%;
+    /* height: 50%; */
     font-family: "Courier New", Courier, monospace;
+	/* max-width: 100%; */
+    overflow-x: hidden;
 }
 
 #header {
@@ -63,7 +65,8 @@ img.zoom {
 |                    footer                     |
 |-----------------------------------------------*/
 footer {
-    height: 110px;
+    height: auto;
     color: #ffffff;
     background-color: #003366;
+	/* background-color: #00336682; */
 }
